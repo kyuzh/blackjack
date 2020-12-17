@@ -56,7 +56,7 @@ public class MainActivity2 extends AppCompatActivity {
                 if (mCheckBox.isChecked()) {
                     boolean result = SavePath.Save(MainActivity2.this, username, userpassword);
                     if (result) {
-                        Toast.makeText(MainActivity2.this, "ok",
+                        Toast.makeText(MainActivity2.this, "Welcom " + username,
                                 Toast.LENGTH_SHORT).show();
                     }
                     Log.d("MainActivity2","username：" + username +" userpassword：" + userpassword);
