@@ -38,13 +38,13 @@ public class MainActivity2 extends AppCompatActivity {
 
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)  //给登录按钮设置监听器
+            public void onClick(View v)
             {
                 String username = mUser.getText().toString();
                 String userpassword = mKey.getText().toString();
 
 
-                //if(!username.equals(username1))//验证
+                //if(!username.equals(username1))//
                 //{Toast.makeText(MainActivity.this, username1,
                 // Toast.LENGTH_SHORT).show();}
 

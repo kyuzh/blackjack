@@ -156,17 +156,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             montantplayer=montantplayer - mise;
             set_button4.setText("montantplayer="+ montantplayer +
                     "\n"+"mise="+ mise);
+            croupiersecond();
             Start=false;
         }
 
     }
-    public void stand() {
-
+    public void croupiersecond(){
         imageview1.setImageBitmap(btp[1]);
         pointcroupier = intvalue[0] + intvalue[1] ;
 
         set_button3.setText("croupier :" + value[0] + " and " + value[1]
                 +"\n" + "pointcroupier:"+ pointcroupier);
+    }
+    public void stand() {
+        croupiersecond();
         int k=2;
         while(pointcroupier<17 && k<5) {
             if (k == 2) {
