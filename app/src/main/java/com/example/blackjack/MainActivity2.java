@@ -3,6 +3,7 @@ package com.example.blackjack;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -58,6 +59,7 @@ public class MainActivity2 extends AppCompatActivity {
                         Toast.makeText(MainActivity2.this, "ok",
                                 Toast.LENGTH_SHORT).show();
                     }
+                    Log.d("MainActivity2","username：" + username +" userpassword：" + userpassword);
                 }
 
 

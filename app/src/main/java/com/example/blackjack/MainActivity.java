@@ -236,7 +236,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 String html = HtmlService.getHtml(url);
                                 JSONObject jsonObject = new JSONObject(html);
                                 deck_id = jsonObject.getString("deck_id");
-                                set_button1.setText("Appuyer Start" );
+                                set_button1.setText("Appuyer Start" + "\n" + "deck_id:" +deck_id);
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
