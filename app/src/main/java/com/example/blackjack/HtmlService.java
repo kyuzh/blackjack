@@ -18,8 +18,8 @@ public class HtmlService {
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
         conn.setConnectTimeout(5 * 1000);
-        InputStream inStream = conn.getInputStream();//通过输入流获取html数据
-        byte[] data = readInputStream(inStream);//得到html的二进制数据
+        InputStream inStream = conn.getInputStream();
+        byte[] data = readInputStream(inStream);
         String html = new String(data, "UTF-8");
         return html;
     }
